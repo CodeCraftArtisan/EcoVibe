@@ -1,0 +1,61 @@
+# Maven
+target/
+!.mvn/wrapper/mvnw
+!.mvn/wrapper/mvnw.cmd
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+
+# VSCode
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment-specific files
+.env
+*.env
+
+# Build artifacts
+*.jar
+*.war
+*.ear
+
+# Compiled class files
+*.class
+
+# Package distribution
+*.zip
+*.tar.gz
+
+# Node.js (if using Node.js tools)
+js-frontend/node_modules/
+
+# Miscellaneous
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.sublime-workspace
+
+# Sensitive data
+secrets/
+
