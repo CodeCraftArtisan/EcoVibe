@@ -1,0 +1,15 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+  .w-full {
+    width: 100%;
+  }
+
+.ecovibe-supporters{
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+  

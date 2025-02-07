@@ -1,0 +1,21 @@
+.w-full {
+  width: 100%;
+}
+.fixed {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+.bg-white {
+  background-color: white;
+}
+
+a {
+  pointer-events: auto;
+}
+
+a.active {
+  font-weight: bold;
+  color: #70C174; 
+}

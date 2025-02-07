@@ -1,0 +1,38 @@
+<div class="container mx-auto my-8 max-w-screen-md">
+  <div class="space-y-6">
+    <!-- Display comments if there are any -->
+    <div *ngIf="comments?.length; else noComments" class="space-y-4">
+      <!-- Start of a card -->
+      <div
+        *ngFor="let comment of comments"
+        class="rounded-lg border border-gray-200 shadow-sm p-6 bg-white"
+      >
+        <div class="flex justify-between items-center mb-4">
+          <h4 class="font-semibold text-gray-800 text-lg">
+            {{ comment.authorUsername }}
+          </h4>
+          <time
+            class="text-sm text-gray-500"
+            [attr.datetime]="comment.date | date : 'yyyy-MM-dd'"
+          >
+            {{ comment.date | date : "medium" }}
+          </time>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          {{ comment.content }}
+        </p>
+      </div>
+      <!-- End of a card -->
+    </div>
+
+    <!-- Placeholder for no comments -->
+    <ng-template #noComments>
+      <div class="text-center bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <p class="text-gray-600 text-lg">
+          No comments yet.
+          <span class="font-semibold">Be the first to comment!</span>
+        </p>
+      </div>
+    </ng-template>
+  </div>
+</div>

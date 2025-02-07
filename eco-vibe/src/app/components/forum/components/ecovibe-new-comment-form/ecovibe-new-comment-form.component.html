@@ -1,0 +1,37 @@
+<div class="container mb-5">
+  <h2 class="text-lg font-bold text-[#1D2130]">You can say something here :</h2>
+  <div
+    class="rounded-md border border-gray-300 bg-white shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] p-5"
+  >
+    <form (ngSubmit)="onSubmit()">
+      <div class="">
+        <input
+          class="py-3 px-5 mb-5 rounded-md border border-gray-300 bg-white shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none text-gray-900 placeholder-gray-400 text-base font-normal leading-relaxed"
+          placeholder="Enter your name here...."
+          id="authorUsername"
+          type="text"
+          [(ngModel)]="newComment.authorUsername"
+          name="authorUsername"
+          required
+        />
+      </div>
+      <div class="">
+        <input
+          class="w-full py-3 px-5 mb-5 rounded-md border border-gray-300 bg-white shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none text-gray-900 placeholder-gray-400 text-base font-normal leading-relaxed"
+          placeholder="Write comments here...."
+          type="text"
+          name="content"
+          id="content"
+          required
+          [(ngModel)]="newComment.content"
+        />
+      </div>
+      <button
+        type="submit"
+        class="py-3 px-5 bg-orange-400 rounded-full text-white font-semibold"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
